@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1 - jquery</title>
+    <style>
+        img
+        {
+            width: 250px;
+            border-radius: 10%;
+            position: absolute;
+        }
+        .main
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        button
+        {
+           
+            width: 100px;
+            height: 50px;
+            border-radius: 10%;
+            padding: 10px;
+            background-color:#8c58fd;
+            border: 0;
+            color: white;
+            margin-left: 63px;
+            margin-top: 300px;
+     
+        }
+        .show-all
+        {
+            margin-top: 220px;
+            margin-left: -190px;
+            position: absolute;
+        }
+        .hide-all
+        {
+            margin-top: 220px;
+            margin-left: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+
+
+    <div>
+        <img class="im1" src="image1.png">
+        <div class="db">
+        <button class="b1">Hide img </button>
+        
+    </div>
+    </div>
+
+    <div>
+        <img class="im2" src="image1.png">
+        <div class="db">
+        <button class="b2">Hide img </button>
+        
+    </div>
+    </div>
+
+ 
+
+    <div>
+        <img class="im3" src="image3.png">
+        <div class="db">
+            <button class="b3">Hide img </button>
+        </div>
+        </div>
+
+        
+
+
+             
+        <div class="show-all">
+            <button>show img all </button>
+        </div>
+        <div class="hide-all">
+            <button >hide img all </button>
+        </div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+
+
+
+  $(".b1").click(function(){
+    $(".im1").hide();
+  });
+  $(".b2").click(function(){
+    $(".im3").hide();
+  });
+  $(".b3").click(function(){
+    $(".im3").hide();
+  });
+
+
+  
+        $(".show-all").click(function(){
+    $("img").show();
+  });
+  $(".hide-all").click(function(){
+    $("img").hide();
+  });
+
+
+
+
+});
+</script>
+</body>
+</html>
