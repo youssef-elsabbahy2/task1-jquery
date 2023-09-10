@@ -44,13 +44,41 @@
             margin-left: 200px;
             position: absolute;
         }
+        .space
+        {
+            margin-bottom: 78px
+
+        }
+        @media (max-width: 786px) {
+            body 
+            {
+                margin-right: 148px;
+            }
+         .main{
+            display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+         }
+        }
+        .db
+        {
+            margin-top: -28px;
+            margin-bottom: 25px; 
+        }
+        .show-all
+        {
+            margin-top: 200px;
+        }
+        
+      
+      
     </style>
 </head>
 <body>
 <div class="main">
 
 
-    <div>
+    <div class="space">
         <img class="im1" src="image1.png">
         <div class="db">
         <button class="b1">Hide img </button>
@@ -58,17 +86,11 @@
     </div>
     </div>
 
-    <div>
-        <img class="im2" src="image1.png">
-        <div class="db">
-        <button class="b2">Hide img </button>
-        
-    </div>
-    </div>
+ 
 
  
 
-    <div>
+    <div class="space">
         <img class="im3" src="image3.png">
         <div class="db">
             <button class="b3">Hide img </button>
@@ -100,9 +122,7 @@
   $(".b1").click(function(){
     $(".im1").hide();
   });
-  $(".b2").click(function(){
-    $(".im3").hide();
-  });
+
   $(".b3").click(function(){
     $(".im3").hide();
   });
